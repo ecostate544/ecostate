@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/PoppinsRegular.eot');
+    src: url('../fonts/PoppinsRegular.eot') format('embedded-opentype'), url('../fonts/PoppinsRegular.woff2') format('woff2'), url('../fonts/PoppinsRegular.woff') format('woff'), url('../fonts/PoppinsRegular.ttf') format('truetype'), url('../fonts/PoppinsRegular.svg#PoppinsRegular') format('svg');
+}
+
+
+:root{
+    --bs-dark-color:#174344;
+    --bs-dark-green:#052D12;
+    --bs-green:#249348;
+    --bs-light-green:#60AA4C;
+    --bs-gray-color: #888888;
+    --bs-off-light-green: #E8F5E8;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'PoppinsRegular';
+}
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--bs-dark-green);
+    text-transform: uppercase;
+}
+h3{
+    color: var(--bs-dark-green);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.paragraph{
+    color: var(--bs-gray-color);
+}
+
+#custom-nav{
+    background-color: var(--bs-white);
+    font-family: 'Montserrat-medium';
+    line-height: 2.6rem;
+}
+#custom-nav .nav-link{
+    color: var(--bs-dark-color);
+}
+#custom-nav .nav-link:hover{
+    color: var(--bs-dark-green);
+}
+#custom-nav  .nav-item{
+    padding-left: 1rem;
+}
+#custom-nav .btn-primary, #about-section .btn-primary, #commercial .btn-primary{
+    background-color: var(--bs-green);
+    border-color: var(--bs-green);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    line-height: 2rem;
+}
+/*================================== custom-nav css colse ================================== */
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    height: 700px;
+}
+
+.banner-content h1{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.banner-content p{
+    line-height: 32px;
+}
+
+#banner .btn-primary{
+    background-color: var(--bs-green);
+    border-color: var(--bs-green);
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 1rem;
+}
+
+.product-box{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.product-name{
+    background-color: var(--bs-light-green);
+    position: absolute;
+    width: 75%;
+    height: 4rem;
+    left: 0;
+    right: 0;
+    bottom: -1.3rem;
+    margin: auto;
+    text-align: center;
+    color: var(--bs-white);
+}
+.product-name h5{
+    line-height: 4rem;
+}
+.product-name:hover{
+    border-radius: 0.5rem;
+    background-color: var(--bs-green);
+}
+
+#about-section .text-uppercase{
+    color: var(--bs-green);
+}
+
+#bg-section{
+    background-color: var(--bs-off-light-green);
+    padding: 4rem 0 4rem 0;
+}
+
+.owl-carousel .owl-item img{
+    width: auto !important;
+}
+.owl-theme .owl-dots .owl-dot{
+    display: none !important;
+}
+
+#commercial ul{
+    display: flex;
+    justify-content: center;
+}
+
+#commercial .nav-pills .nav-link {
+    background: var(--bs-off-light-green);
+    border: 1px solid var(--bs-green);
+    border-radius: 0;
+    color: var(--bs-green);
+    margin-right: 1rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: var(--bs-white) !important;
+    background-color: var(--bs-green) !important;
+}
+
+footer{
+    background-color: #202220;
+    color: #fff;
+    padding: 2.5rem 0 0.5rem 0;
+    color: #74787C;
+}
+footer small {
+    color: #74787C;
+}
+
+footer .email-phone-postion{
+    margin-top: 0.6rem;
+    margin-left: 0.8rem;
+    color: var(--bs-white);
+}
+
+footer h4, footer h6, footer .list-unstyled li a{
+    color: var(--bs-white);
+    text-decoration: none;
+}
+footer h4 span{
+    color: var(--bs-green);
+}
+
+footer .list-unstyled li{
+    line-height: 2;
+}
+footer .list-unstyled li a:hover{
+    color: #74787C;
+}
+footer .social-media{
+    margin-right: 1rem;
+}
+
+#mission-vission{
+    background-image: url(../img/mission-vission-img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px 40px 0px;
+}
+#mission-vission .shadow-sm{
+    background-color: var(--bs-white);
+}
+
+
+
+.vision{
+    height: 100%;
+}
+
+#contact .contact-box{
+    background-color: var(--bs-off-light-green);
+    padding: 16px 0 16px 16px;
+}
+#contact .contact-box .postion{
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************* Media queries Section ****************************************/
+/*==================================================================================================*/
+
+
+@media (max-width: 1400px) {
+    .banner-content{
+        height: 400px;
+   }
+}
+
+@media (max-width: 1200px) {
+    .banner-content h1{
+        font-size: 2.5rem;
+   }
+    .banner-content{
+        height: 300px;
+   }
+}
+
+@media (max-width: 992px) {
+    .banner-content p{
+        padding:0.7rem;
+   }
+}
+@media (max-width: 768px) {
+    .banner-content{
+        height: 250px;
+   }
+   #about-list .d-flex{
+    display: contents !important;
+   }
+   #commercial ul {
+    display: contents;
+}
+#commercial .nav-pills .nav-link {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+}
+
+@media (max-width: 576px) {
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--bs-dark-green);
+    }
+
+    #custom-nav .navbar-brand{
+        width: 50%;
+   }
+    #custom-nav .nav-logo{
+        width: 100%;
+   }
+   /*-----------------------------------------------------------*/
+    .banner-content{
+        height: 80px;
+   }
+   #banner .btn-primary {
+    --bs-btn-padding-y: 0.6rem;
+    --bs-btn-padding-x: 0.6rem;
+}
+    .banner-content h1{
+        font-size: 1.2rem;
+   }
+
+
+}
